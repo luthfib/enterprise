@@ -1,0 +1,29 @@
+ version: '3'
+ services:
+  mongo:
+    ports:
+      - "0.0.0.0:27017:27017" # Don't do this in production
+    build:
+      context: './db/'
+      dockerfile: Dockerfile
+    container_name: 'mongotest'
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+  
+   # redis:
+   # ports:
+   #   - "6379:6379" # Don't do this in production
+   # build:
+   #   context: './redis/'
+   #   dockerfile: Dockerfile
+   # container_name: 'redis-server'
+  #site:
+  #  ports:
+  #    - "0.0.0.0:8080:8080" # Don't do this in production
+  #  build:
+  #    context: './'
+  #    dockerfile: Dockerfile
+  #  container_name: 'site'
