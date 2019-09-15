@@ -1,0 +1,51 @@
+/* common */
+.GridIcon {
+	display: inline-block;
+	margin: 2vw;
+}
+
+.GridIcon:hover > span > span {
+	opacity: .8;
+}
+
+.GridIcon > .Layer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+
+/* style */
+.GridIconLine2 {
+	position: relative;
+	width: 26px;
+	height: 26px;
+}
+
+.GridIconLine2 > .Layer {
+	height: 12px;
+}
+
+.GridIconLine2 > .LayerPrimary {
+	top: 0;
+}
+
+.GridIconLine2 > .LayerSecondary {
+	bottom: 0;
+}
+
+.GridIconLine2 > .Layer > span {
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 100%;
+	box-sizing: border-box;
+	border: solid 1px rgb(0, 0, 20, .30);
+}
+
+.GridIconLine2 > .Layer > span:first-child {
+	left: 0;
+}
+
+.GridIconLine2 > .Layer > span:nth-child(2) {
+	right: 0;
+}

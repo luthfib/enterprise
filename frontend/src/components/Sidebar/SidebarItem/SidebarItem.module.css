@@ -1,0 +1,24 @@
+.SidebarItem {
+    align-items: center;
+    padding-left: 1.5em;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    /* Selected item hover color
+    background-color: rgba(255, 255, 255, 0.32); */
+}
+
+.SidebarItem:after {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 120px;
+}
+
+.SidebarItem:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+}

@@ -1,0 +1,22 @@
+.Header {
+    background-color: #FFF;
+    grid-area: header;
+    position: relative;
+    display: flex;
+    background-color: rgb(76, 69, 57, 0.102);
+    padding-right: 5%;
+   /* border-bottom: 1.5px solid #929292;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header:after {
+    content: "";
+    background: #929292;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 1.5px;
+    width: 90%;
+    text-align: center;
+}

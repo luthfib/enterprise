@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "GidoleFont";
+    src: url('../../assets/GidoleFont/Gidole-Regular.ttf') format("truetype");
+}
+
+.Layout {
+    display: grid;
+    margin: auto 0;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-columns: 180px auto 1fr; 
+     /* grid-template-columns: repeat(2, 180px) 1fr;*/
+    font-family: "GidoleFont", Verdana, Tahoma;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "sidebar groupsidebar header"
+                         "sidebar groupsidebar content";
+}
+

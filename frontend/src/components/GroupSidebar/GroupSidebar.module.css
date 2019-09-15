@@ -1,0 +1,24 @@
+.GroupSidebar {
+    color: white;
+    /*display: grid;*/
+    grid-template-rows: 40px 1fr 2fr;
+    background: rgba(184,178,175, .56); /* fallback for old browsers */
+    box-shadow: -5px 0px 26px 0 rgba(0, 0, 0, 0.62);
+    grid-area: groupsidebar;   
+    height: 100%;
+    color: #2e2c2b;;
+}
+
+.GroupSidebarDisplay {
+    display: grid;
+}
+
+.GroupSidebarDisplayNone {
+    display: none;
+}
+
+.NavigationLinks {
+    display: grid;
+    padding: 0px;
+    grid-template-rows: repeat(4, 1fr);
+}

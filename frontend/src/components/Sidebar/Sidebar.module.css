@@ -1,0 +1,17 @@
+.Sidebar {
+    grid-area: sidebar;
+    color: white;
+    display: grid;
+    grid-template-rows: 80px 1fr 2fr;
+    background: #134e5e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #134e5e, #71b280); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #134e5e, #71b280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: -5px 0px 26px 0 rgba(0, 0, 0, 0.62);
+    z-index: 9;
+}
+
+.NavigationLinks {
+    display: grid;
+    padding: 0px;
+    grid-template-rows: repeat(4, 1fr);
+}

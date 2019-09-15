@@ -1,0 +1,26 @@
+.UserIcon {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-radius: 32px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to bottom, #134e5e, #71b280);
+    color: #FFF;
+    font-size: 22px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.UserIcon:hover {
+    opacity: 0.8;
+}
+
+.UserIconDiv {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: auto;
+    text-align: center;
+}
